@@ -63,6 +63,318 @@
           "type": "string",
           "index": "analyzed",
           "analyzer": "kuromoji_analyzer"
+        },
+        "full_name": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "private": {
+          "type": "boolean",
+          "index": "not_analyzed"
+        },
+        "html_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "description": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "fork": {
+          "type": "boolean",
+          "index": "not_analyzed"
+        },
+        "url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "forks_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "keys_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "collaborators_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "teams_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "hooks_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "issue_events_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "events_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "assignees_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "branches_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "tags_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "blobs_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "git_tags_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "git_refs_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "trees_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "statuses_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "languages_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "stargazers_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "contributors_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "subscribers_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "subscription_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "commits_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "git_commits_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "comments_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "issue_comment_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "contents_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "compare_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "merges_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "archive_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "downloads_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "issues_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "pulls_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "milestones_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "notifications_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "labels_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "releases_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "created_at": {
+          "type": "date",
+          "index": "not_analyzed"
+        },
+        "updated_at": {
+          "type": "date",
+          "index": "not_analyzed"
+        },
+        "pushed_at": {
+          "type": "date",
+          "index": "not_analyzed"
+        },
+        "git_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "ssh_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "clone_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "svn_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "homepage": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "size": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "stargazers_count": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "watchers_count": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "language": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "has_issues": {
+          "type": "boolean",
+          "index": "not_analyzed"
+        },
+        "has_downloads": {
+          "type": "boolean",
+          "index": "not_analyzed"
+        },
+        "has_wiki": {
+          "type": "boolean",
+          "index": "not_analyzed"
+        },
+        "forks_count": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "mirror_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "open_issues_count": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "forks": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "open_issues": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "watchers": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "default_branch": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "score": {
+          "type": "double",
+          "index": "not_analyzed"
+        },
+        "languages": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "languages_bytes": {
+          "type": "long",
+          "index": "not_analyzed"
         }
       }
     },
@@ -78,7 +390,186 @@
         "type": "github_repository"
       },
       "properties": {
-
+        "login": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "id": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "avatar_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "gravatar_id": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "html_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "followers_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "following_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "gists_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "starred_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "subscriptions_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "organizations_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "repos_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "events_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "received_events_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "type": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "site_admin": {
+          "type": "boolean",
+          "index": "not_analyzed"
+        }
+      }
+    },
+    "github_readme": {
+      "_source": {
+        "enabled": true
+      },
+      "_all": {
+        "enabled": true,
+        "analyzer": "kuromoji_analyzer"
+      },
+      "_parent": {
+        "type": "github_repository"
+      },
+      "properties": {
+        "name": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "path": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "sha": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "size": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "html_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "git_url": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "type": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "content": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "encoding": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "raw": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        }
+      }
+    },
+    "github_readme_links": {
+      "_source": {
+        "enabled": true
+      },
+      "_all": {
+        "enabled": true,
+        "analyzer": "kuromoji_analyzer"
+      },
+      "_parent": {
+        "type": "github_readme"
+      },
+      "properties": {
+        "self": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "git": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        },
+        "html": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        }
       }
     }
   }
