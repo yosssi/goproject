@@ -1,0 +1,85 @@
+{
+  "settings": {
+    "analysis": {
+      "filter": {
+        "pos_filter": {
+          "type": "kuromoji_part_of_speech",
+          "stoptags": [
+            "助詞-格助詞-一般",
+            "助詞-終助詞"
+          ]
+        },
+        "greek_lowercase_filter": {
+          "type": "lowercase",
+          "language": "greek"
+        }
+      },
+      "tokenizer": {
+        "kuromoji": {
+          "type": "kuromoji_tokenizer"
+        },
+        "ngram_tokenizer": {
+          "type": "nGram",
+          "min_gram": "2",
+          "max_gram": "3",
+          "token_chars": [
+            "letter",
+            "digit"
+          ]
+        }
+      },
+      "analyzer": {
+        "kuromoji_analyzer": {
+          "type": "custom",
+          "tokenizer": "kuromoji_tokenizer",
+          "filter": [
+            "kuromoji_baseform",
+            "pos_filter",
+            "greek_lowercase_filter",
+            "cjk_width"
+          ]
+        },
+        "ngram_analyzer": {
+          "tokenizer": "ngram_tokenizer"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "github_repository": {
+      "_source": {
+        "enabled": true
+      },
+      "_all": {
+        "enabled": true,
+        "analyzer": "kuromoji_analyzer"
+      },
+      "properties": {
+        "id": {
+          "type": "long",
+          "index": "not_analyzed"
+        },
+        "name": {
+          "type": "string",
+          "index": "analyzed",
+          "analyzer": "kuromoji_analyzer"
+        }
+      }
+    },
+    "github_owner": {
+      "_source": {
+        "enabled": true
+      },
+      "_all": {
+        "enabled": true,
+        "analyzer": "kuromoji_analyzer"
+      },
+      "_parent": {
+        "type": "github_repository"
+      },
+      "properties": {
+
+      }
+    }
+  }
+}
