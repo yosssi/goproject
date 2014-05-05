@@ -543,7 +543,7 @@
         }
       }
     },
-    "github_readme_links": {
+    "github_readme_link": {
       "_source": {
         "enabled": true
       },
