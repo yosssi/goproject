@@ -1,8 +1,9 @@
-// package main provides main processes.
+// package main provides main processes
 package main
 
 import (
 	"log"
+	"sync"
 
 	"github.com/yosssi/goproject/models"
 	"github.com/yosssi/goproject/workers"
@@ -17,9 +18,14 @@ func main() {
 	}
 	app.Logger.Infof("An application was generated. [app: %+v]", app)
 
+	// Generate a WaitGroup.
+	wg := &sync.WaitGroup{}
+
 	// Invoke workers.
-	wkrs := []workers.Worker{workers.NewGitHub(app)}
-	for _, worker := range wkrs {
-		worker.Search()
+	for _, worker := range workers.All(app, wg) {
+		go worker.Run()
 	}
+
+	// Wait until all workers end their tasks.
+	wg.Wait()
 }
