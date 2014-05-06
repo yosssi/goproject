@@ -22,7 +22,7 @@ func main() {
 	wg := &sync.WaitGroup{}
 
 	// Invoke workers.
-	for _, worker := range workers.All(app, wg) {
+	for _, worker := range workers.Searchers(app, wg) {
 		go worker.Run()
 	}
 
