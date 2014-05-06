@@ -1,3 +1,4 @@
 name: goproject
 level: TRACE
 file: ""
+output_file_colored: false

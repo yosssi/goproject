@@ -7,4 +7,5 @@ const (
 	ConfigPath              = "./config/"
 	LoggerConfigPath        = ConfigPath + "logger" + YmlExtension
 	ElasticsearchConfigPath = ConfigPath + "elasticsearch" + YmlExtension
+	GitHubConfigPath        = ConfigPath + "github" + YmlExtension
 )
