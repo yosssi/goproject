@@ -8,13 +8,12 @@ import (
 
 // GitHubConfig represents a GitHub config.
 type GitHubConfig struct {
-	ClientID     string `yaml:"client_id"`
-	ClientSecret string `yaml:"client_secret"`
+	AccessToken string `yaml:"access_token"`
 }
 
 // GitHubClient generates a GitHub client and returns it.
 func (g *GitHubConfig) GitHubClient() *gogithub.Client {
-	return gogithub.NewClient(g.ClientID, g.ClientSecret)
+	return &gogithub.Client{AccessToken: g.AccessToken}
 }
 
 // NewGitHubConfig parses a yaml file, generates a GitHubConfig and returns it.
