@@ -31,7 +31,7 @@ func (g *GitHubIndexer) Index() {
 	for repository := range g.repositoryC {
 		g.app.Logger.Infof("[%s] Repository: %s", reflect.TypeOf(g), repository.FullName)
 		result := make(map[string]interface{})
-		g.app.ElasticsearchClient.Create(consts.IndexGoProject, consts.TypeGitHubRepository, repository, result)
+		g.app.ElasticsearchClient.Create(consts.IndexGoProject, consts.TypeGitHubRepository, repository, &result)
 		fmt.Printf("%+v", result)
 	}
 }
